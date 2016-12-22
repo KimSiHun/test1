@@ -1,4 +1,4 @@
-var a = "abc";
+return new kibana(){
 
 
-alert(a);
+}
