@@ -35,7 +35,7 @@ define(function (require){
             invertScale: null
           },
           // load edit file
-          editor: require('plugins/test1/test1_params.html');
+          editor: require('plugins/test1/test1_params.html')
       },
       schemas: new Schemas([
         {
@@ -43,7 +43,7 @@ define(function (require){
           name: 'metric',
           title: 'Metric',
           min: 1,
-          max 1,
+          max: 1,
           defaults:
           [
             {
