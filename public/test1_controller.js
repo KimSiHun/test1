@@ -1,5 +1,5 @@
 define(function (require){
-  var module = require('ui/modules').get('kibana/test1', [kibana]);
+  var module = require('ui/modules').get('kibana/test1', ['kibana']);
 
   module.controller('Test1Controller', function($scope, Private){
 
@@ -9,7 +9,7 @@ define(function (require){
     var title = null;
 
     $scope.processTableGroups = function(tableGroups){
-      tableGroups.tables.forEach(funtion(table){
+      tableGroups.tables.forEach(function(table){
         table.columns.forEach(function(column,i){
           var fieldFormatter = table.aggConfig(column).fieldFormatter();
           metrics[0] = {label: column.title, value: table.rows[0][i]};
