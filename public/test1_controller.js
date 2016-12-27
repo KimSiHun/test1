@@ -8,7 +8,7 @@ define(function (require){
     var metrics = $scope.metrics = [];
     var title = null;
 
-    $scope.processTableGroups function(tableGroups){
+    $scope.processTableGroups = function(tableGroups){
       tableGroups.tables.forEach(funtion(table){
         table.columns.forEach(function(column,i){
           var fieldFormatter = table.aggConfig(column).fieldFormatter();
